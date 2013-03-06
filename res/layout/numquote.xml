@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Number"
+        android:hint="@string/etHint"
         android:textColor="#fff"
         android:inputType="number"
         android:layout_gravity="center" >
@@ -31,8 +31,6 @@
         android:id="@+id/quoteTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:textColor="#354245"
         android:text="@string/quote_table"/>
     
@@ -40,8 +38,6 @@
         android:id="@+id/discountTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:textColor="#186e71"
         android:text="@string/discount"/>
     
@@ -50,6 +46,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Browse Mobile Notary Services" />
+        android:text="@string/webBrowserBttn" />
 
 </LinearLayout>

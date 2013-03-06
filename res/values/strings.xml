@@ -7,6 +7,8 @@
     <string name="intro_title">Quote calculator for estimating Notary services for clients.</string>
     <string name="num_doc">Number of Documents</string>
     <string name="ppp">Price Per Page</string>
+    <string name="webBrowserBttn">Browse Mobile Notary Services</string>
+    <string name="etHint">Enter Number</string>
     <string name="q">Quote</string>
     <string name="c">Calculate</string>
     <string name="discount">Common Discounts: \r\n

@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.practice);
+		setContentView(R.layout.activity_main);
 		documents = (Button) findViewById(R.id.button1);
 		costPerPage = (Button) findViewById(R.id.button2);
 		calc = (Button) findViewById(R.id.button3);
