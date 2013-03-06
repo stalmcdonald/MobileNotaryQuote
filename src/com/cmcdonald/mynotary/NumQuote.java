@@ -30,28 +30,24 @@ public class NumQuote extends Activity implements OnClickListener {
 		// set listener for browse button
 		browse = (Button) findViewById(R.id.browseBttn);
 		shareInfo.setOnClickListener(this);
-		 
+
         browse.setOnClickListener(new OnClickListener() {
 		
         	//IMPLICIT INTENT WEB BROWSER
         	@Override
-    		public void onClick(View interwebs) {
+    	public void onClick(View interwebs) {
         		// Sends user to Notary Service website when button is clicked
-        Uri uriUrl = Uri.parse("http://www.123notary.com/mobilenotary.htm");
+        	//Website gives more information if suggested prices are not what user wants
+        		Uri uriUrl = Uri.parse("http://www.123notary.com/mobilenotary.htm");
 
-        Intent browse_intent = new Intent(Intent.ACTION_VIEW, uriUrl);
+        		Intent browse_intent = new Intent(Intent.ACTION_VIEW, uriUrl);
 
-        startActivity(browse_intent);
-        
-    }
-			
-		
-
-});
-		    	
-		    
+        		startActivity(browse_intent);      
+        		}	
+        });		    
 	}
 	
+	//ACTIVITY2 TAKES IN A NUMBER TO DISPLAY IT ON ACTIVITY1
 	@Override
 	public void onClick(View v) {
 		// get info from edit text and send back
@@ -71,8 +67,6 @@ public class NumQuote extends Activity implements OnClickListener {
 			setResult(RESULT_OK, i);
 			finish();
 				
-		}
-		
-		
+		}	
 	}
 }

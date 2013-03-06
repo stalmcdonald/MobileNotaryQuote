@@ -27,13 +27,14 @@ public class MainActivity extends Activity implements OnClickListener{
 		calc = (Button) findViewById(R.id.button3);
 		myQuote = (TextView) findViewById(R.id.textView1);
 		
-		//setup onclick listener
+		//setup onclick listeners for buttons
 		documents.setOnClickListener(this);
 		costPerPage.setOnClickListener(this);
 		calc.setOnClickListener(this);
 		
 	}
-
+	//EXPLICIT INTENT
+	//BUTTONS
 	@Override
 	public void onClick(View v) {
 		// if button 1-2 are pressed go to new activity
@@ -42,7 +43,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		//buttons
 		case R.id.button1:
-		//width
+		//DOCS
 		i.putExtra("numbers", "documents");
 		startActivityForResult(i, 1);
 			break;
@@ -64,7 +65,8 @@ public class MainActivity extends Activity implements OnClickListener{
 			break;
 		}
 	}
-
+	
+	//GET NUMBERS BACK FROM ACTIVITY2 TO BE CALCULATED
 	//capture info being sent back
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data){
